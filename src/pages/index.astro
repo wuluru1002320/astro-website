@@ -1,19 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <main>
-    <Header />
-    <h1>My Astro Site</h1>
-    <Footer />
-    <script>
-      import "../scripts/menu.js";
-    </script>
-  </main>
-</Layout>
+<BaseLayout title="Welcome to Astro." />
 
 <style>
   main {
