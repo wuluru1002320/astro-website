@@ -1,8 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting.jsx";
 ---
 
-<BaseLayout title="Welcome to Astro." />
+<BaseLayout title="Welcome to Astro.">
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+</BaseLayout>
 
 <style>
   main {
